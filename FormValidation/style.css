@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color:#2C3E50 ;
+    
+    font-family: 'Caveat', cursive;
+}
+body{
+    background: linear-gradient(#CCD1D1 ,#EAF2F8,#F9EBEA );
+}
+
+.container{
+    width: 400px;
+    position: relative;
+    top: 20%;
+    left: 35%;
+    background-color: #D0D3D4 ;
+    border: #2C3E50 solid 3px;
+    text-align: center;
+    box-shadow:    -5px -5px 5px #566573  ;    
+}
+.su {
+    padding: 15px 0;
+    background: lightcoral;
+    font-size:xx-large ;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.container form .box1,.box2,.box3,.box4,.box5{
+    font-weight: bolder;
+
+}
+hr{
+    border: #2C3E50 solid 2px;
+}
+ label{
+    padding-left: 20px;
+    margin: 12px 0;
+    position: absolute;
+    display: block;
+}
+input{
+    margin-left: 80px;
+    margin-bottom:20px ;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color:#F9EBEA ;
+    border-radius: 3px;
+    border: #2C3E50 solid 3px
+    
+}
+
+ #btn{
+    font-size: medium;
+    font-weight: 500;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    color: #F9EBEA ;
+    background-color: #273746;
+    cursor: pointer;
+ }
+ #btn:hover{
+    transform: scaleX(1.1);
+ }
+ .container:hover{
+    border: none;
+ }
+ 
+ 
