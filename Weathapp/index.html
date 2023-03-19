@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>App</title>
+</head>
+<body>
+
+                                                                        <!--navbar starts here-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather App</a>
+          
+            <form class="d-flex" role="search" id="mySearch">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+              <button type="submit" class="btn btn-outline-success"  >Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+                                                                                                    <!-- nav bar ends here -->
+    
+   <div class="container">  <main>
+    <h2 class="my-4 text-center" id="cityName">City</h2>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">City Details</h4>
+          </div>
+          <div class="card-body">
+           
+            <ul class="list-unstyled mt-3 mb-4">
+              
+              <li id="state" >State</li>
+              <li id="timezn">TimeZone</li>
+              
+            </ul>
+        
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Co-Ordinates</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li id="lat" >Latitude</li>
+              <li id="lon" >Longitude</li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm ">
+          <div class="card-header py-3 ">
+            <h4 class="my-0 fw-normal">Feels Like</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li id="temp">Temp</li>
+              <li id="humd">Humidity</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-6 text-center mb-4">Weather</h2>
+
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Distance</th>
+            <th style="width: 22%;">FeelsLikeTemp</th>
+            <th style="width: 22%;">Pressure</th>
+            <th style="width: 22%;">RelHumidity</th>
+            <th style="width: 22%;">Temperature</th>
+            <th style="width: 22%;">Visibility</th>
+            <th style="width: 22%;">WindDir</th>
+            <th style="width: 22%;">WindDirString</th>
+            <th style="width: 22%;">WindGust</th>
+            <th style="width: 22%;">WindSpeed</th>
+
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" id="localc1"></th>
+            <td id="distancec1">0</td>
+            <td id="feelsLikeTempc1">0</td>
+            <td id="pressurec1">0</td>
+            <td id="relHumidityc1">0</td>
+            <td id="temperaturec1">0</td>
+            <td id="visibilityc1">0</td>
+            <td id="windDirc1">0</td>
+            <td id="windDirStringc1">0</td>
+            <td id="windGustc1">0</td>
+            <td id="windSpeedc1">0</td>
+            
+          </tr>
+          <tr>
+            <th scope="row" class="text-start" id="localc2"></th>
+            <td id="distancec2">0</td>
+            <td id="feelsLikeTempc2">0</td>
+            <td id="pressurec2">0</td>
+            <td id="relHumidityc2">0</td>
+            <td id="temperaturec2">0</td>
+            <td id="visibilityc2">0</td>
+            <td id="windDirc2">0</td>
+            <td id="windDirStringc2">0</td>
+            <td id="windGustc2">0</td>
+            <td id="windSpeedc2">0</td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start" id="localc3"></th>
+            <td id="distancec3">0</td>
+            <td id="feelsLikeTempc3">0</td>
+            <td id="pressurec3">0</td>
+            <td id="relHumidityc3">0</td>
+            <td id="temperaturec3">0</td>
+            <td id="visibilityc3">0</td>
+            <td id="windDirc3">0</td>
+            <td id="windDirStringc3">0</td>
+            <td id="windGustc3">0</td>
+            <td id="windSpeedc3">0</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </main>  </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js "  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
